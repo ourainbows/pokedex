@@ -37,7 +37,7 @@ const createPokemonCard = (pokemon) => {
     
     let card = "<div  class='pokemon' style='background-color:" + colors[type] + "'>"
     card += "<div  class='img-container'>"
-    card += '<img src=' + pokemon.sprites.front_default + ' alt="' + pokemon.name +'">'
+    card += '<img src=' + pokemon.official-artwork.front_default + ' alt="' + pokemon.name +'">'
     card += "</div>"
     card += "<div class='info'>"
     card += "<span class='number'>" + pokemon.id+"</span>"
