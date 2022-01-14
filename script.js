@@ -34,10 +34,10 @@ const getPokemon = async (id) => {
 
 const createPokemonCard = (pokemon) => {
     let type = pokemon.types[0].type.name
-    /* console.log([pokemon.sprites.other.official-artwork]) */
+
     let card = "<div  class='pokemon' style='background-color:" + colors[type] + "'>"
     card += "<div  class='img-container'>"
-    card += '<img src=' + `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.id}.png` + ' alt="' + pokemon.name +'">'
+    card += '<img src=' + pokemon.sprites.other["official-artwork"].front_default + ' alt="' + pokemon.name +'">'
     card += "</div>"
     card += "<div class='info'>"
     card += "<span class='number'>" + pokemon.id+"</span>"
